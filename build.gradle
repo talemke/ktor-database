@@ -1,0 +1,16 @@
+plugins {
+	id "org.jetbrains.kotlin.multiplatform" version "$KOTLIN_VERSION"
+}
+
+group = "de.talemke"
+version = "0.0.1-SNAPSHOT"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	commonMainApi "io.ktor:ktor-server-core:$KTOR_VERSION"
+	commonTestImplementation "org.jetbrains.kotlin:kotlin-test:$KOTLIN_VERSION"
+}
+
