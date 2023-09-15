@@ -1,0 +1,21 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+
+# Gradle
+.gradle/
+/gradle/
+/gradlew
+/gradlew.bat
+
+# Build Ouptut
+build/
+kotlin-js-store/
+out/
+
+# Misc.
+desktop.ini
+thumbs.db
