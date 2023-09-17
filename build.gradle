@@ -1,5 +1,5 @@
 plugins {
-	id "org.jetbrains.kotlin.multiplatform" version "$KOTLIN_VERSION"
+	id "org.jetbrains.kotlin.jvm" version "$KOTLIN_VERSION"
 }
 
 group = "de.talemke"
@@ -10,7 +10,9 @@ repositories {
 }
 
 dependencies {
-	commonMainApi "io.ktor:ktor-server-core:$KTOR_VERSION"
-	commonTestImplementation "org.jetbrains.kotlin:kotlin-test:$KOTLIN_VERSION"
+
+	api "io.ktor:ktor-server-core:$KTOR_VERSION"
+	api "org.jetbrains.exposed:exposed-core:0.43.0"
+
 }
 
