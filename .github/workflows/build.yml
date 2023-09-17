@@ -1,0 +1,21 @@
+name: "Build"
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: "ubuntu-latest"
+    container:
+      image: "gradle"
+    steps:
+      - name: "Checkout Repository"
+        uses: "actions/checkout@v4"
+      - name: "Start Gradle Daemon"
+        run: "gradle projects"
+      - name: "Compile Project"
+        run: "gradle assemble"
+      - name: "Build & Test Project"
+        run: "gradle build"
