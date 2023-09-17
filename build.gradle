@@ -12,7 +12,12 @@ repositories {
 dependencies {
 
 	api "io.ktor:ktor-server-core:$KTOR_VERSION"
-	api "org.jetbrains.exposed:exposed-core:0.43.0"
+	api "org.jetbrains.exposed:exposed-core:$EXPOSED_VERSION"
+
+	testImplementation "org.jetbrains.kotlin:kotlin-test:$KOTLIN_VERSION"
+	testImplementation "org.jetbrains.exposed:exposed-jdbc:$EXPOSED_VERSION"
+	testImplementation "io.ktor:ktor-server-test-host:$KTOR_VERSION"
+	testImplementation "com.h2database:h2:2.1.214"
 
 }
 
