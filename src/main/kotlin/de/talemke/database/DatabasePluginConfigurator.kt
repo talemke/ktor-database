@@ -27,6 +27,20 @@ class DatabasePluginConfigurator internal constructor() {
 
 
 
+	inline fun addDatabase(block: () -> Database) {
+		addDatabase(block())
+	}
+
+	inline fun addDatabase(key: String, block: () -> Database) {
+		addDatabase(key, block())
+	}
+
+	inline fun <reified E : Enum<E>> addDatabase(key: E, block: () -> Database) {
+		addDatabase(key, block())
+	}
+
+
+
 	internal fun validate() = DatabasePluginConfiguration(
 		defaultDatabaseKey = defaultDatabaseKey,
 		database = database,
