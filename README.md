@@ -8,7 +8,7 @@
 
 ## Features
 
-- Bridge between [Ktor](https://github.com/ktorio/ktor) and [JetbRains/Exposed](https://github.com/JetBrains/Exposed)
+- Bridge between [Ktor](https://github.com/ktorio/ktor) and [JetBrains/Exposed](https://github.com/JetBrains/Exposed)
 - Supports suspending transactions
 - Database metrics for specific endpoints
 - Multiple databases
