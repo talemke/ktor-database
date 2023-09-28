@@ -1,0 +1,9 @@
+dependencies {
+
+	api project(":")
+
+	implementation "org.jetbrains.exposed:exposed-jdbc:$EXPOSED_VERSION"
+
+	implementation "org.xerial:sqlite-jdbc:3.30.1"
+
+}

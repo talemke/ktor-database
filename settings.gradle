@@ -1,3 +1,4 @@
 rootProject.name = "ktor-database"
 
 include "ktor-database-mysql"
+include "ktor-database-sqlite"
