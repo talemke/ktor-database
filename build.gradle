@@ -1,12 +1,18 @@
 plugins {
-	id "org.jetbrains.kotlin.jvm" version "$KOTLIN_VERSION"
+	id "org.jetbrains.kotlin.jvm" version "$KOTLIN_VERSION" apply false
 }
 
-group = "de.talemke"
-version = "0.0.1-SNAPSHOT"
+allprojects {
 
-repositories {
-	mavenCentral()
+	apply plugin: "org.jetbrains.kotlin.jvm"
+
+	group = "de.talemke"
+	version = "0.0.1-SNAPSHOT"
+
+	repositories {
+		mavenCentral()
+	}
+
 }
 
 dependencies {

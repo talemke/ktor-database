@@ -1,0 +1,10 @@
+dependencies {
+
+	api project(":")
+
+	implementation "org.jetbrains.exposed:exposed-jdbc:$EXPOSED_VERSION"
+
+	implementation "mysql:mysql-connector-java:8.0.19"
+	api "com.zaxxer:HikariCP:3.4.2"
+
+}
