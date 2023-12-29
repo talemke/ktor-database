@@ -1,4 +1,4 @@
-rootProject.name = "ktor-database"
+rootProject.name = "ktor-database-plugin"
 
 include "ktor-database-mysql"
 include "ktor-database-sqlite"
